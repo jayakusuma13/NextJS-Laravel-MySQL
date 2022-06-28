@@ -33,8 +33,8 @@ export default function Home({allPostsData}) {
         </p>  
 
         <div className={styles.grid}>
-          {allPostsData.map(({value1, value2})=>(
-            <a className={styles.card}>
+          {allPostsData.map(({value1, id})=>(
+            <a className={styles.card} key={id}>
               {value1}
               <br/>
             </a>
